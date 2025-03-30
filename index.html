@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <title>My Link-in-Bio</title>
     <style>
       * {
@@ -10,6 +11,8 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        background: linear-gradient(90deg, #17355b, #2a4f72, #3e688a, #5182a1, #669cb8, #7cb7d0, #92d2e7, #aaeeff);
+        font-family: "Garamond";
       }
       .avatar-image {
         width: 128px;
@@ -25,9 +28,71 @@
         border-radius: 48px;
       }
 
+      .name-row {
+        color: white;
+      }
+
+      .social-icons-row a {
+        color: white;
+      }
+
+      .item {
+        background-color: rgba(0, 210, 255, 0.32);
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Lucida Console";
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .links-row a {
+        color:white;
+      }
+
+      .item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+  
+
     </style>
   </head>
   <body>
+
     <div class="main-container">
       <div class="image-row">
         <img class="avatar-image" src="Images/Download.jpg" alt="EV Nora headshot"
@@ -50,11 +115,12 @@
         <a href="https://www.instagram.com/evn98/?next=%2F" target="_blank">
           Instagram
         </a>
+        </div>
       <div class="links-row">
           <div class="item">
             <img class="thumbnail" src="/Images/TFA.png">
     
-            <a target="_blank" href="https://www.teachforamerica.org/">
+            <a class="link-text" target="_blank" href="https://www.teachforamerica.org/">
               Teach For America
             </a>
           </div>
@@ -62,7 +128,7 @@
           <div class="item">
             <img class="thumbnail" src="/Images/Memorang.png">
     
-            <a target="_blank" href="https://memorang.com/">
+            <a class="link-text" target="_blank" href="https://memorang.com/">
               Memorang
             </a>
         </div>
